@@ -1,13 +1,10 @@
 var topics = [
 	"eliud Kipchoge",
 	"paula radcliffe",
-	"meseret defar",
     "mo farah",
     "molly huddle",
     "galen rupp",
-	"meb keflezighi",
 	"usain bolt",
-	"mosinet geremew",
 	"dennis kimetto",
 	"kenenisa bekele",
 	"wilson kipsang",
@@ -25,8 +22,8 @@ for(var i = 0; i < topics.length; i++) {
 	$("#button-group").append(button);
 }
 
-$("#add-run-button").on("click", function(e) {
-	e.preventDefault();
+$("#add-run-button").on("click", function(pd) {
+	pd.preventDefault();
 	var alreadyExist = false;
 	if(topics.indexOf($("#new-run-input").val()) !== -1) {
 		alreadyExist = true;
